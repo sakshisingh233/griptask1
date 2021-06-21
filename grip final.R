@@ -5,6 +5,9 @@
 library(readxl)
 grip <- read_excel("C:/Users/my pc/Desktop/grip.xlsx")
 
+#plotting the scores
+plot(grip$Hours,grip$Scores, main= 'Hours and scores')
+
 #creating the linear model
 model<- lm(grip$Scores~grip$Hours)
 
